@@ -1,0 +1,280 @@
+.topnav {
+  background-color: #cdb499;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+a.first {margin:45px 0 0 0;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*-- Her starter (SCROLL DOWN) paa siden --*/
+
+.scrolldown{
+	position: absolute;
+	bottom: 20px;
+	left: 190px;
+	width: 100px;
+	height: 100px;
+	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid #daabab;
+	border-right: 2px solid #f0acac;
+	animation: animate 1.5s linear infinite;
+	opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+	transform: translate(-15px,-15px);
+	animation-delay: 0.4s;
+}
+
+.scrolldown span:nth-child(2){
+	transform: translate(0,0);
+	animation-delay: 0.2s;
+}
+
+.scrolldown span:nth-child(3){
+	transform: translate(15px,15px);
+	animation-delay: 0s;
+}
+
+@keyframes animate{
+	0%{
+		top: -5px;
+		left: -5px;
+		opacity: 0;
+	}
+	25%{
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+	}
+	100%{
+		top: 5px;
+		left: 5px;
+		opacity: 0;
+	}
+
+
+}
+
+/*-- Her slutter (SCROLL DOWN) paa siden --*/
+/* ---------- HER STARTER HAMBURGER ---------- */
+
+.btn{
+	padding: 0.75rem 1.25rem;
+	text-transform: uppercase;
+	color: #cdb499;
+	font-weight: 550;
+	font-size: 1.1rem;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	background-color: #111;
+	display: inline-block;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+	opacity: 0.8;
+}
+/* ---------- HER SLUTTER HAMBURGER ---------- */
+
+
+
+/* ------------ Her starter headeren på siden -----------  */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: .5em 1.25em;
+  background:#cdb499;
+  border-radius: .25em;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: #cdb499;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #f0acac;
+  margin-bottom: 5rem;
+}
+
+.hero {
+  color: #f0acac;
+  text-align: center;
+  padding: 15em 0;
+  background-image: url(baggrund.png);
+  background-repeat: no-repeat;
+}
+
+/* ------------ Her slutter headeren på siden -----------  */
+
+.tekst {
+    text-align: center;
+    color: #cdb499;
+    margin: 0;
+}
+
+h2 {
+  margin-top: 1em;
+  text-align: center;
+    color: #cdb499;
+}
+
+.projekter {
+  background-color: #e4dcd1;
+}
+
+.row {
+  display: flex;
+  background-color: #e4dcd1;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+.footer {
+    background-color: #313131;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    min-height: 252px;
+    position: relative;
+
+}
+
+img {
+  margin-top: 26px;
+}
+
+p {
+    margin: 0 0 20px;
+    font-size: 13px;
+}
+
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px)
+#jf-footer {
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #cdb499;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    min-height: 252px;
+    position: relative;
