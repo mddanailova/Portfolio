@@ -1,6 +1,8 @@
 body {
   margin:0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .topnav {
@@ -36,6 +38,10 @@ body {
   display: none;
 }
 
+h1{
+  margin-left: 5px;
+}
+
 .row {
   display: flex;
 }
@@ -43,6 +49,10 @@ body {
 .column {
   flex: 33.33%;
   padding: 5px;
+}
+
+.custom img {
+  margin-top: 26px;
 }
 
 @media screen and (max-width: 600px) {
@@ -73,7 +83,6 @@ a.first {margin:45px 0 0 0;}
 .footer {
     background-color: #313131;
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     min-height: 252px;
     position: relative;
@@ -95,7 +104,6 @@ p {
 .footer {
     background-color: #cdb499;
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     min-height: 252px;
     position: relative;
