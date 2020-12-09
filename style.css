@@ -1,5 +1,5 @@
 .topnav {
-  background-color: #313131;
+  background-color: #162840;
   overflow: hidden;
 }
 
@@ -8,7 +8,7 @@
 .topnav a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #cdb499;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -205,14 +205,14 @@ body {
 
 .tekst {
     text-align: center;
-    color: #cdb499;
+    color: #586673;
     margin: 0;
 }
 
 h2 {
   margin-top: 1em;
   text-align: center;
-    color: #cdb499;
+    color: #586673;
 }
 
 .projekter {
@@ -230,6 +230,13 @@ h2 {
   text-align: center;
 }
 
+.formular{
+  text-align: left;
+}
+
+.formular h2{
+    text-align: left;
+  }
 
 
 .footer {
@@ -268,6 +275,46 @@ p {
     margin-inline-end: 0px;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #162840;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #cdb499;
+}
+
+/* Add a background color and some padding around the form */
+.formular {
+  border-radius: 5px;
+  background-color: #cdb499;
+  padding: 20px;
+  width:90%;
+  margin-bottom: 20px;
+  }
+
+  .formular h2 {
+    margin-top: 5px;
+  }
+
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
@@ -280,8 +327,10 @@ p {
 }
 
 .footer {
-    background-color: #313131;
-    color: #fff;
+    background-image: url(footer1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #cdb499;
     text-align: center;
     min-height: 252px;
     position: relative;
