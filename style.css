@@ -1,7 +1,8 @@
 .topnav {
-  background-color: #cdb499;
+  background-color: #313131;
   overflow: hidden;
 }
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -196,7 +197,7 @@ body {
   color: #f0acac;
   text-align: center;
   padding: 15em 0;
-  background-image: url(baggrund.png);
+  background-image: url(solnedgang.jpg);
   background-repeat: no-repeat;
 }
 
@@ -279,9 +280,8 @@ p {
 }
 
 .footer {
-    background-color: #cdb499;
+    background-color: #313131;
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     min-height: 252px;
     position: relative;
