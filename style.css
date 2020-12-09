@@ -205,8 +205,8 @@ body {
 
 .tekst {
     text-align: center;
-    color: #586673;
     margin: 0;
+    color: #586673;
 }
 
 h2 {
@@ -265,6 +265,10 @@ p {
     font-size: 13px;
 }
 
+.custom {
+
+}
+
 }
 user agent stylesheet
 p {
@@ -319,6 +323,12 @@ input[type=submit]:hover {
   .column {
     width: 100%;
   }
+  .footer {
+    background-image: url(footer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 }
 
 @media (max-width: 767px)
@@ -329,7 +339,7 @@ input[type=submit]:hover {
 .footer {
     background-image: url(footer1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: #cdb499;
     text-align: center;
     min-height: 252px;
