@@ -208,6 +208,7 @@ body {
     margin: 0;
     color: #586673;
     margin: 40px 0 40px 0;
+    line-height: 30px;
 }
 
 h2 {
@@ -250,7 +251,6 @@ margin: 20px 40px 20px 40px;
 .footer {
     background-color: #313131;
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     min-height: 252px;
     position: relative;
@@ -314,7 +314,11 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #cdb499;
+  background-color: #586673;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Add a background color and some padding around the form */
@@ -329,6 +333,21 @@ input[type=submit]:hover {
   .formular h2 {
     margin-top: 5px;
   }
+
+#left_column {
+  padding: 45px 100px 80px 100px;
+  line-height: 40px;
+  text-align: left;
+  text-align: justify;
+}
+
+#left_column img {
+  padding-right: 10px;
+}
+
+#left_column h2 {
+  text-align: left;
+}
 
 @media screen and (max-width: 500px) {
   .column {
@@ -349,9 +368,19 @@ input[type=submit]:hover {
 
 .tekst {
   margin: 0 10px 0 10px;
+  line-height: 25px;
 }
 
+#left_column {
+  padding: 20px 30px 20px 30px;
+  line-height: 20px;
+  text-align: justify;
 }
+
+#left_column h2{
+  text-align: center;
+}
+
 }
 
 @media (max-width: 767px)
