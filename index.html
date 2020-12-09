@@ -9,16 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<script>
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -48,19 +38,30 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </head>
-
+<!-- Her starter hamburger-menuen -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<header>
+<div class="sticky">
 <div class="topnav" id="myTopnav">
   <a class="first" href="#kontakt">Kontakt</a>
-  <a href="#projektert">Projekter</a>
+  <a href="#projekter">Projekter</a>
   <a href="#om">Om mig</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-</header>
+</div>
+
 <h1>Tema 1.1: Rumrejsen</h1>
 <div class="row">
   <div class="column">
