@@ -21,30 +21,31 @@ function myFunction() {
 </head>
 <!-- Her starter hamburger-menuen -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<div class="sticky">
 <div class="topnav" id="myTopnav">
   <a class="first" href="#kontakt">Kontakt</a>
-  <a href="#projektert">Projekter</a>
+  <a href="#projekter">Projekter</a>
   <a href="#om">Om mig</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
+</div>
 <!-- Her slutter hamburger-menuen -->
 
 <!-- Her starter header paa siden -->
 
-<header class="hero">
+<div class="hero">
     <div class="container spacing">
       <!--
       <p id="img_logo"><img src="images/logo.PNG" alt="" height="150px" width="150px"> </p>
       -->
       <h1 class="primary-title">Mila Danailova</h1>
       <a href="#down" class="btn">Scroll Down</a>
-      <div id="down">
+      <div id="down"></p><a name="om"></a>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- Her slutter header paa siden -->
 
@@ -60,13 +61,13 @@ function myFunction() {
 
 <!-- Her slutter (SCROLL DOWN) paa siden -->
 <div class="tekst">
-  <div class="custom"  >
+  <div class="custom" >
   <h2> Velkommen til min portfolio</h2>
     <hr />
  <p>Jeg har sammensat denne portfolio, hvor jeg viser mine projekter frem - alt lige fra webdesigns til logos, og grafisk design. </p>
- <p> Jeg er studerende på Zealand Erhvervsakademi som multimediedesigner på 1. semester. Mine færdigheder stræber sig bredt inden for både kodnings og grafisk design opgaver.</p>
+ <p> Mit navn er Mila Danailova. Jeg er 20 år og bor i Høje Taastrup. I øjeblikket læser jeg multimediedesign på Zealand Erhvervsakademi. Jeg elsker nye udfordringer og så går jeg aldrig ind i et projekt uden at gøre det 100% færdigt. Mine færdigheder stræber sig bredt inden for både kodnings og grafisk design opgaver. Har du en freelance opgave, så skriv endelig!</p><a name="projekter"></a>
 </div>
-
+</div>
 <div class="projekter">
   <h2>Projekter</h2>
   <h4>En samling af mine skole og private projekter. Lige fra webdesign til andre kreative ideer.</h4>
@@ -76,12 +77,12 @@ function myFunction() {
     <img src="rumrejsen.jpg" alt="Rumrejsen" style="width:80%">
   </a>
     <h4> Tema 1.1: Rumrejsen</h4>
-    <p>Forsiden for Danmarks Nationale Rumraketsprogram. </p>
+    <p>Forsiden for Danmarks Nationale Rumraketsprogram </p>
   </div>
   <div class="column">
     <img src="ballet.jpg" alt="Ballet" style="width:80%">
     <h4> Tema 1.2: Dans, dans, dans</h4>
-      <p>Om os side kodet for mobil, til balletskolen Balletto. </p>
+      <p>Om os side kodet for mobil, til balletskolen Balletto </p>
   </div>
   <div class="column">
     <img src="bagrattet.jpg" alt="Bil" style="width:80%">
@@ -93,25 +94,26 @@ function myFunction() {
   <div class="column">
     <img src="video.jpg" alt="Bil" style="width:80%">
     <h4> Tema 1.4: Video</h4>
-      <p>Videoprojekt - "En dag i Nicoles liv".</p>
+      <p>Videoprojekt - "En dag i Nicoles liv"</p>
     <p>  </p>
   </div>
   <div class="column">
     <img src="ballet.jpg" alt="Ballet" style="width:80%">
-    <h4> Tema 1.2: Dans, dans, dans</h4>
-      <p>Logo for en revisorfirma. </p>
+    <h4> Freelance logo</h4>
+      <p>Logo til en revisorfirma </p>
   </div>
   <div class="column">
-    <img src="bagrattet.jpg" alt="Bil" style="width:80%">
-    <h4> Noget</h4>
+    <img src="biocosmetic.jpg" alt="Bil" style="width:80%">
+    <h4> Freelance logo</h4><a name="kontakt"></a>
+    <p>Logo til den bulgarske butik "Bio Cosmetic Brands</p>
   </div>
 </div>
 </div>
 
 <div class="row">
-  <div class="column">
+  <div class="column" id="left_column">
   </div>
-  <div class="column">
+  <div class="column" id="right_column">
     <div class="formular">
       <h2>Kontakt mig</h2>
       <form action="action_page.php">

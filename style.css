@@ -207,6 +207,7 @@ body {
     text-align: center;
     margin: 0;
     color: #586673;
+    margin: 40px 0 40px 0;
 }
 
 h2 {
@@ -217,7 +218,11 @@ h2 {
 
 .projekter {
   background-color: #e4dcd1;
+  text-align: center;
+  color: #586673;
+  padding-top: 10px;
 }
+
 
 .row {
   display: flex;
@@ -238,6 +243,9 @@ h2 {
     text-align: left;
   }
 
+.custom p {
+margin: 20px 40px 20px 40px;
+}
 
 .footer {
     background-color: #313131;
@@ -265,8 +273,11 @@ p {
     font-size: 13px;
 }
 
-.custom {
-
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 99999;
 }
 
 }
@@ -312,7 +323,7 @@ input[type=submit]:hover {
   background-color: #cdb499;
   padding: 20px;
   width:90%;
-  margin-bottom: 20px;
+  margin: 20px auto 30px auto;
   }
 
   .formular h2 {
@@ -321,13 +332,25 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 500px) {
   .column {
-    width: 100%;
+  width: 100%;
   }
+
+  .row {
+    display: flex;
+   flex-direction: column;
+  }
+
+
   .footer {
     background-image: url(footer1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.tekst {
+  margin: 0 10px 0 10px;
+}
+
 }
 }
 
@@ -344,3 +367,4 @@ input[type=submit]:hover {
     text-align: center;
     min-height: 252px;
     position: relative;
+}
