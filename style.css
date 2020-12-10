@@ -117,6 +117,15 @@ p {
   z-index: 99999;
 }
 
+.topknap {
+  position: fixed;
+      bottom: 19px;
+      right: 19px;
+      opacity: 70%;
+  z-index: 99999;
+  display: none;
+}
+
 }
 user agent stylesheet
 p {
@@ -145,7 +154,7 @@ a {
   width:auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
 
   .indhold {
     display: flex;
@@ -165,6 +174,15 @@ a {
 .tekst {
   margin: 0 10px 0 10px;
   line-height: 25px;
+}
+
+.topknap {
+  position: fixed;
+      bottom: 19px;
+      right: 19px;
+      opacity: 70%;
+  z-index: 99999;
+  display: inline;
 }
 
 }
