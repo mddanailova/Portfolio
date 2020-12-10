@@ -112,6 +112,15 @@ p {
   z-index: 99999;
 }
 
+.topknap {
+  position: fixed;
+      bottom: 19px;
+      right: 19px;
+      opacity: 70%;
+  z-index: 99999;
+  display: none;
+}
+
 }
 user agent stylesheet
 p {
@@ -163,6 +172,15 @@ a {
 
 .video {
   width: 100%;
+}
+
+.topknap {
+  position: fixed;
+      bottom: 19px;
+      right: 19px;
+      opacity: 70%;
+  z-index: 99999;
+  display: inline;
 }
 
 }
