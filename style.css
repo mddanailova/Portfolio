@@ -397,3 +397,11 @@ a {
     min-height: 252px;
     position: relative;
 }
+
+.topknap {
+  position: fixed;
+      bottom: 19px;
+      right: 19px;
+      opacity: 70%;
+  z-index: 99999;
+}
