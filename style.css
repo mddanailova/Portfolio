@@ -64,36 +64,15 @@ body {
 }
 
 
-.tekst {
-    text-align: center;
-    margin: 0;
-    color: #586673;
-    margin: 40px 0 40px 0;
-    line-height: 30px;
-}
-
 .indhold {
   padding: 10px 20px 10px 20px;
   display: flex;
+}
+
+.tekst {
+  color: #162840;
   text-align: justify;
-}
-
-.column {
-  padding: 20px;
-}
-
-.column img {
-  width: 100%;
-}
-
-.column1 img {
-  padding-right: 10px;
-}
-
-h2 {
-  margin-top: 1em;
-  text-align: center;
-    color: #586673;
+  padding-right: 20px;
 }
 
 .footer {
