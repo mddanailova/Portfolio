@@ -79,11 +79,15 @@ body {
 }
 
 .column {
-  padding: 15px;
+  padding: 20px;
 }
 
 .column img {
   width: 100%;
+}
+
+.column1 img {
+  padding-right: 10px;
 }
 
 h2 {
