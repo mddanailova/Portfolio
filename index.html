@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="da">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Projekt">
+<meta name="description" content="Mila Danailova">
 <title>Mila Danailova</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -18,76 +19,145 @@ function myFunction() {
   }
 }
 </script>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
 </head>
 <!-- Her starter hamburger-menuen -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="sticky">
 <div class="topnav" id="myTopnav">
-  <a href="http://miladanailova.dk/#projekter/">Tilbage til forsiden</a>
+  <a class="first" href="#kontakt">Kontakt</a>
+  <a href="#projekter">Projekter</a>
+  <a href="#om">Om mig</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 </div>
+<!-- Her slutter hamburger-menuen -->
 
-<div class="indhold">
-  <div class="column" style="width:100%;">
-<h1>Tema 1.1: Rumrejsen</h1>
-
-  <h4> Beskrivelse af projektet:</h4>
-  <p>I led af Danmarks Nationale Rumraketsprogram (forkortet DNR) havde Forsvaret valgt os studerende på Zealand Erhvervsakademi til at udvikle koncepter og digitale løsninger ift. salg af rejser ud i rummet. Målgruppen var privatpersoner der har råd til rumrejser. Vores endelige koncept blev at rejse i rummet med vores eksklusive “Rum-Hotel”, hvor vi tilbyder spændende oplevelser for hele familien.</p>
-  <h4> Tankerne bag:</h4>
-  <p>Forsiden skulle være simpel, nem og gennemskuelig, hvorfra man ville have muligheden til at kunne trykke sig videre ind på de andre undersider for mere information. Skulle der mangle noget, har jeg også tilføjet et søgefelt øverst til højre, så man direkte kan blive viderestillet til det man er interesseret i at finde ud af.</p>
-</div>
-<div class="column" style="width:100%;">
-<img src="rumrejsen1.jpg">
-<img src="rumrejsen.jpg">
-</div>
-</div>
-
-
-  <div class="footer">
-  <div class="custom"  >
-  <img src="logomd.png" alt="" />
-  <hr />
-  <p> </p>
-  <p><strong>Mila Danailova</strong><br />Graphic &amp; Web Design portfolio</p></div>
+<!-- Her starter header paa siden -->
+<div class="hero">
+    <div class="container spacing">
+      <!--
+      <p id="img_logo"><img src="images/logo.PNG" alt="" height="150px" width="150px"> </p>
+      -->
+      <h1 class="primary-title">Mila Danailova</h1>
+      <a href="#down" class="btn">Scroll Down</a>
+      <div id="down"><a name="om"></a>
+      </div>
+    </div>
   </div>
-  					</div>
-  				</div>
-  			</div>
-  <body>
 
-  </body>
-    </html>
+  <!-- Her slutter header paa siden -->
+
+<div class="tekst">
+  <div class="custom" >
+  <h2> Velkommen til min portfolio</h2>
+    <hr />
+ <p>Jeg har sammensat denne portfolio, hvor jeg viser mine projekter frem - alt lige fra webdesigns til logos, og grafisk design. </p>
+ <p id="projekter"> Mit navn er Mila Danailova. Jeg er 20 år og bor i Høje Taastrup. I øjeblikket læser jeg multimediedesign på Zealand Erhvervsakademi. Jeg elsker nye udfordringer og så går jeg aldrig ind i et projekt uden at gøre det 100% færdigt. Mine færdigheder stræber sig bredt inden for både kodnings og grafisk design opgaver. Har du en freelance opgave eller ser du mig som din fremtidige kollega, så skriv endelig!</p>
+</div>
+</div>
+<div class="projekter">
+  <h2>Projekter</h2>
+  <h4>En samling af mine skole og private projekter. Lige fra webdesign til andre kreative ideer.</h4>
+<div class="row">
+  <div class="column">
+    <a href="http://miladanailova.dk/RumrejsenProjekt/">
+    <img src="rumrejsen.jpg" alt="Rumrejsen" style="width:80%">
+  </a>
+    <h4> Tema 1.1: Rumrejsen</h4>
+    <p>Forsiden for Danmarks Nationale Rumraketsprogram </p>
+  </div>
+  <div class="column">
+    <a href="http://miladanailova.dk/DansProjekt/">
+    <img src="ballet.jpg" alt="Ballet" style="width:80%">
+  </a>
+    <h4> Tema 1.2: Dans, dans, dans</h4>
+      <p>Om os side kodet for mobil, til balletskolen Balletto </p>
+  </div>
+  <div class="column">
+    <a href="http://miladanailova.dk/BagRattetProjekt/">
+    <img src="modular1.png" alt="Bil" style="width:80%">
+  </a>
+    <h4> Tema 1.3: Bag rattet</h4>
+      <p>Om os side for bilmærket Modular Cars</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href="http://miladanailova.dk/BagRattet2Projekt/">
+    <img src="bagrattet.jpg" alt="Bil" style="width:80%">
+  </a>
+    <h4> Tema 1.3: Bag Rattet 2</h4>
+      <p>Produkt side, samt detalje side for det nye bilmærke Modular Cars</p>
+  </div>
+  <div class="column">
+    <a href="http://miladanailova.dk/Video/">
+    <img src="video.jpg" alt="Ballet" style="width:80%">
+  </a>
+    <h4>Tema 1.4: Video</h4>
+      <p>Videoprojekt - "En dag i Nicoles liv" </p>
+  </div>
+  <div class="column">
+    <img src="biocosmetic.jpg" alt="Bil" style="width:80%">
+    <h4> Freelance logo</h4>
+    <p id="kontakt">Logo til den bulgarske butik "Bio Cosmetic Brands</p>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="column" id="left_column">
+    <h2>Vil du vide mere?</h2>
+    <p>Du er meget velkommen til at kontakte mig, hvis mit arbejde har vækket interesse eller har yderligere spørgsmål. Send en SMS eller fang mig via kontaktformularen til venstre - jeg vil sørge for, at vi får kigget på henvendelsen hurtigst muligt.</p>
+    <p><strong>Mobil:</strong> 53 79 20 80<br>
+      <strong>Mail:</strong> mila@danailov.com</p>
+      <a href="https://www.facebook.com/mila.danailova/">
+      <img src="facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.instagram.com/mila.danailova/">
+        <img src="instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.pinterest.dk/26miladanailova/">
+          <img src="pinterest.png" alt="pinterest">
+        </a>
+  </div>
+  <div class="column">
+    <div class="formular">
+      <h2>Kontakt mig</h2>
+      <form action="action_page.php">
+
+        <label for="fname">Navn:</label>
+        <input type="text" id="fname" name="firstname">
+
+        <label for="lname">Email:</label>
+        <input type="text" id="lname" name="lastname">
+
+        <label for="subject">Din besked:</label>
+        <textarea id="subject" name="subject" style="height:100px"></textarea>
+
+        <input type="submit" value="Send">
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+			<div class="main">
+				<div class="main-inner1 clearfix">
+							<div class="moduletable">
+
+<div class="custom"  >
+	<img src="logomd.png" alt="" />
+<hr />
+<p> </p>
+<p><strong>Mila Danailova</strong><br />Graphic &amp; Web Design portfolio</p></div>
+</div>
+					</div>
+				</div>
+			</div>
+
+</body>
+  </html>
