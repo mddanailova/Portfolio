@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk">
+<html lang="da">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -20,7 +21,6 @@ function myFunction() {
 </script>
 </head>
 <!-- Her starter hamburger-menuen -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="sticky">
 <div class="topnav" id="myTopnav">
   <a class="first" href="#kontakt">Kontakt</a>
@@ -34,7 +34,6 @@ function myFunction() {
 <!-- Her slutter hamburger-menuen -->
 
 <!-- Her starter header paa siden -->
-
 <div class="hero">
     <div class="container spacing">
       <!--
@@ -42,30 +41,19 @@ function myFunction() {
       -->
       <h1 class="primary-title">Mila Danailova</h1>
       <a href="#down" class="btn">Scroll Down</a>
-      <div id="down"></p><a name="om"></a>
+      <div id="down"><a name="om"></a>
       </div>
     </div>
   </div>
 
   <!-- Her slutter header paa siden -->
 
-
-  <!-- Her starter (SCROLL DOWN) paa siden -->
-
-<section>
-  <div>
-
-  </div>
-</section>
-
-
-<!-- Her slutter (SCROLL DOWN) paa siden -->
 <div class="tekst">
   <div class="custom" >
   <h2> Velkommen til min portfolio</h2>
     <hr />
  <p>Jeg har sammensat denne portfolio, hvor jeg viser mine projekter frem - alt lige fra webdesigns til logos, og grafisk design. </p>
- <p> Mit navn er Mila Danailova. Jeg er 20 år og bor i Høje Taastrup. I øjeblikket læser jeg multimediedesign på Zealand Erhvervsakademi. Jeg elsker nye udfordringer og så går jeg aldrig ind i et projekt uden at gøre det 100% færdigt. Mine færdigheder stræber sig bredt inden for både kodnings og grafisk design opgaver. Har du en freelance opgave eller ser du mig som din fremtidige kollega, så skriv endelig!</p><a name="projekter"></a>
+ <p id="projekter"> Mit navn er Mila Danailova. Jeg er 20 år og bor i Høje Taastrup. I øjeblikket læser jeg multimediedesign på Zealand Erhvervsakademi. Jeg elsker nye udfordringer og så går jeg aldrig ind i et projekt uden at gøre det 100% færdigt. Mine færdigheder stræber sig bredt inden for både kodnings og grafisk design opgaver. Har du en freelance opgave eller ser du mig som din fremtidige kollega, så skriv endelig!</p>
 </div>
 </div>
 <div class="projekter">
@@ -80,19 +68,25 @@ function myFunction() {
     <p>Forsiden for Danmarks Nationale Rumraketsprogram </p>
   </div>
   <div class="column">
+    <a href="">
     <img src="ballet.jpg" alt="Ballet" style="width:80%">
+  </a>
     <h4> Tema 1.2: Dans, dans, dans</h4>
       <p>Om os side kodet for mobil, til balletskolen Balletto </p>
   </div>
   <div class="column">
+    <a href="">
     <img src="modular1.png" alt="Bil" style="width:80%">
+  </a>
     <h4> Tema 1.3: Bag rattet</h4>
       <p>Om os side for bilmærket Modular Cars</p>
   </div>
 </div>
 <div class="row">
   <div class="column">
+    <a href="">
     <img src="bagrattet.jpg" alt="Bil" style="width:80%">
+  </a>
     <h4> Tema 1.3: Bag Rattet 2</h4>
       <p>Produkt side, samt detalje side for det nye bilmærke Modular Cars</p>
     <p>  </p>
@@ -104,8 +98,8 @@ function myFunction() {
   </div>
   <div class="column">
     <img src="biocosmetic.jpg" alt="Bil" style="width:80%">
-    <h4> Freelance logo</h4><a name="kontakt"></a>
-    <p>Logo til den bulgarske butik "Bio Cosmetic Brands</p>
+    <h4> Freelance logo</h4>
+    <p id="kontakt">Logo til den bulgarske butik "Bio Cosmetic Brands</p>
   </div>
 </div>
 </div>
@@ -117,13 +111,13 @@ function myFunction() {
     <p><strong>Mobil:</strong> 53 79 20 80<br>
       <strong>Mail:</strong> mila@danailov.com</p>
       <a href="https://www.facebook.com/mila.danailova/">
-      <img src="facebook.png">
+      <img src="facebook.png" alt="facebook">
     </a>
     <a href="https://www.instagram.com/mila.danailova/">
-        <img src="instagram.png">
+        <img src="instagram.png" alt="instagram">
       </a>
       <a href="https://www.pinterest.dk/26miladanailova/">
-          <img src="pinterest.png">
+          <img src="pinterest.png" alt="pinterest">
         </a>
   </div>
   <div class="column">
@@ -131,13 +125,13 @@ function myFunction() {
       <h2>Kontakt mig</h2>
       <form action="action_page.php">
 
-        <label for="navn">Navn:</label>
+        <label for="fname">Navn:</label>
         <input type="text" id="fname" name="firstname">
 
-        <label for="mail">Email:</label>
+        <label for="lname">Email:</label>
         <input type="text" id="lname" name="lastname">
 
-        <label for="besked">Din besked:</label>
+        <label for="subject">Din besked:</label>
         <textarea id="subject" name="subject" style="height:100px"></textarea>
 
         <input type="submit" value="Send">
@@ -163,8 +157,6 @@ function myFunction() {
 					</div>
 				</div>
 			</div>
-		</div>
-<body>
 
 </body>
   </html>
